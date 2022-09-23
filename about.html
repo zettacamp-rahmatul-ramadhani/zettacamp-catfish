@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #1c87c9;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #eeeeee;
+            display: block;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar a.active {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            padding: 18px;
+            height: auto;
+        }
+        
+        .row {
+            display: flex;
+            align-items: stretch;
+            margin-top: 30px;
+        }
+
+        .column {
+            margin: 10px;
+            padding: 10px;
+        }
+        
+        .grid {
+            display: grid;
+            column-gap: 50px;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        .grid-item {
+            background-color: #1c87c9;
+            padding: 10px;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #1c87c9;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <h1>About Me Page</h1>
+        <hr>
+        <div class="row" style="background-color: #1c87c9;">
+            <div class="column" style="flex-grow: 1;">
+                <img src="assets/foto.jpeg" alt="" height="200">
+            </div>
+            <div class="column" style="flex-grow: 8; background-color: #ddd; margin: 20px">
+                Description : <br />
+                <p style="text-indent: 50px">
+                Skilled in Web Development, Python programming language and problem solving.
+                Experience in creating Back-End website applications using Laravel and CodeIgniter Frameworks,
+                also using MERN method (MongoDB, ExpressJs, ReactJD, NodeJS).
+                Beside that, I am currently studying Machine Learning and Data Science.</p>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="grid-item">Hobby
+                <ul>
+                    <li>Badminton</li>
+                    <li>Watching Movie</li>
+                    <li>Reading</li>
+                    <li>Gaming</li>
+                </ul>
+            </div>
+            <div class="grid-item" style="text-align: center;">Favorite Music <br />
+                <img src="assets/wagakki.jpg" alt="" height="200" style="margin-top: 10px;"> <br />
+                <span><strong><a href="https://en.wikipedia.org/wiki/Wagakki_Band" style="text-decoration: none;">Wagakki Band</a></strong></span>
+            </div>
+            <div class="grid-item" style="text-align: center;">Favorite Movie : <br />
+                <img src="assets/totoro.jpg" alt="" height="200" style="margin-top: 10px;"> <br />
+                <span><strong><a href="https://ghiblicollection.com/" style="text-decoration: none;">My Neighbor Totoro - Studio Ghibli</a></strong></span>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright by Rahmatul Ramadhani &#169; 2022 </p>
+    </div>
+</body>
+</html>

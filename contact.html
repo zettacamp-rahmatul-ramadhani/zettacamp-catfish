@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #1c87c9;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #eeeeee;
+            display: block;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar a.active {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            padding: 18px;
+            height: auto;
+        }
+
+        .row {
+            display: grid;
+            gap: 30px;
+            grid-template-columns: auto auto;
+            padding: 12px;
+        }
+        .column {
+            background-color: #1ADCAB;
+            border-radius: 10px;
+            padding: 12px;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #1c87c9;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>Contact Page</h1>
+        <hr>
+        <div class="row">
+            <p id="instagram">Instagram : <a href="https://www.instagram.com/rahmatulramadhani/">rahmatulramadhani</a></p>
+            <p id="whatsapp">Whatsapp : <a href="https://wa.me/08990929826">08990929826</a></p>
+            <p id="github">Github : <a href="https://github.com/Rahmatuldani">Rahmatuldani</a></p>
+            <p id="linkedin">LinkedIn : <a href="https://www.linkedin.com/in/rahmatul-ramadhani-415183186/">Rahmatul Ramadhani</a></p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright by Rahmatul Ramadhani &#169; 2022 </p>
+    </div>
+</body>
+</html>
