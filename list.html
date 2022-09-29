@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item List</title>
+    <link rel="stylesheet" href="css/day5.css">
+    <script src="./js/day5.js"></script>
+</head>
+<body style="width: 2000px;">
+    <nav class="navbar sticky-top">
+        <a href="item.html">Item</a>
+        <a href="list.html" class="active">List</a>
+    </nav>
+    <div class="container">
+        <section class="input" style="padding: 20px;">
+            <table id="list">
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Merk</th>
+                    <th>Model</th>
+                    <th>Price</th>
+                    <th>For</th>
+                    <th>Color</th>
+                    <th>Description</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td><img src="./items/air-force.webp" alt="" height="100"></td>
+                    <td>Nike Air Force 1 Low Retro</td>
+                    <td>Nike</td>
+                    <td>Sneakers</td>
+                    <td>Rp 2.149.000</td>
+                    <td>Male</td>
+                    <td>Red, Green, Black</td>
+                    <td>Shoes Merk Nike model sneakers</td>
+                    <td>
+                        <button class="submit" style="margin-left: 10px;">Delete</button>
+                        <button class="submit">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./items/air-force.webp" alt="" height="100"></td>
+                    <td>Nike Air Force 1 Low Retro</td>
+                    <td>Nike</td>
+                    <td>Sneakers</td>
+                    <td>Rp 2.149.000</td>
+                    <td>Male</td>
+                    <td>Red, Green, Black</td>
+                    <td>Shoes Merk Nike model sneakers</td>
+                    <td>
+                        <button class="submit" style="margin-left: 10px;">Delete</button>
+                        <button class="submit">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./items/air-force.webp" alt="" height="100"></td>
+                    <td>Nike Air Force 1 Low Retro</td>
+                    <td>Nike</td>
+                    <td>Sneakers</td>
+                    <td>Rp 2.149.000</td>
+                    <td>Male</td>
+                    <td>Red, Green, Black</td>
+                    <td>Shoes Merk Nike model sneakers</td>
+                    <td>
+                        <button class="submit" style="margin-left: 10px;">Delete</button>
+                        <button class="submit">Edit</button>
+                    </td>
+                </tr>
+                <tr>
+                    <form action="">
+                        <td>
+                            <input type="file" name="file" id="file" accept="image/*" style="display: none;" required>
+                            <label for="file" class="selImage">Select Image</label>
+                        </td>
+                        <td>
+                            <input type="text" id="name" name="name" placeholder="Item Name">
+                        </td>
+                        <td>
+                            <select id="merk" name="merk">
+                                <option value="Nike">Nike</option>
+                                <option value="Adidas">Adidas</option>
+                                <option value="Vans">Vans</option>
+                                <option value="New Balance">New Balance</option>
+                                <option value="Puma">Puma</option>
+                                <option value="Reebok">Reebok</option>
+                                <option value="Converse">Converse</option>
+                                <option value="DC Shoes">DC Shoes</option>
+                                <option value="Fila">Fila</option>
+                                </select>
+                        </td>
+                        <td>
+                            <select id="model" name="model">
+                                <option value="Sneakers">Sneakers</option>
+                                <option value="Wedges">Wedges</option>
+                                <option value="Peep Toe Heels">Peep Toe Heels</option>
+                                <option value="Flat Shoes">Flat Shoes</option>
+                                <option value="Loafers">Loafers</option>
+                                <option value="Boots">Boots</option>
+                                <option value="Stiletto">Stiletto</option>
+                                <option value="Slip On">Slip On</option>
+                                <option value="Boat Shoes">Boat Shoes</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" id="price" name="price" placeholder="Price" onkeypress="return onlyNumberKey(event)">
+                        </td>
+                        <td>
+                            <input type="radio" name="for" id="male" value="Male">
+                            <label for="male">Male</label><br>
+                            <input type="radio" name="for" id="female" value="Female">
+                            <label for="female">Female</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="color" id="Red" value="Red">
+                            <label for="Red">Red</label><br>
+                            <input type="checkbox" name="color" id="Green" value="Green">
+                            <label for="Green">Green</label><br>
+                            <input type="checkbox" name="color" id="Blue" value="Blue">
+                            <label for="Blue">Blue</label><br>
+                            <input type="checkbox" name="color" id="White" value="White">
+                            <label for="White">White</label><br>
+                            <input type="checkbox" name="color" id="Black" value="Black">
+                            <label for="Black">Black</label>
+                        </td>
+                        <td>
+                            <textarea id="description" name="description" placeholder="Description" style="height:100px"></textarea>
+                        </td>
+                        <td>
+                            <button class="submit">Add</button>
+                        </td>
+                    </form>
+                </tr>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
