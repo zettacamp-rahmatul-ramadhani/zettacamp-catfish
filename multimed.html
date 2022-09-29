@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutimedia</title>
+    <link rel="stylesheet" href="css/multimed.css">
+</head>
+<body>
+    <div class="container p-3">
+        <div class="row">
+            <div class="column">
+                <h2>Multimedia</h2>
+                <hr>
+                <p style="margin: 1rem; margin-top: 2rem;padding: 5px;"><b>Favorite Music : Wagakki Band - Phony</b></p>
+                <div class="col-items">
+                    <audio controls src="/assets/和楽器バンド _ フォニイ Cover (Official Music Video).mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="col-items">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UKvM6ip--Xw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-items">
+                    <img src="/assets/wagakki.jpg" alt="" height="350">
+                </div>
+            </div>
+            <div class="column">
+                <h2>Form</h2>
+                <hr>
+                <form action="" class="form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email">
+                    <label for="male">Sex</label><br>
+                    <input type="radio" id="male" name="sex" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="sex" value="female">
+                    <label for="female">Female</label><br>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password">
+                    <label for="password">Confirm Password</label>
+                    <input type="password" id="password" name="password" placeholder="Confirm Password">
+                    <input type="submit" value="Submit">
+                  </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

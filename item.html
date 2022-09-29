@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items</title>
+    <link rel="stylesheet" href="./css/day5.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/day5.js"></script>
+</head>
+<body>
+    <nav class="navbar sticky-top">
+        <a href="item.html" class="active">Item</a>
+        <a href="list.html">List</a>
+    </nav> 
+    <div class="container">
+        <section class="input">
+            <h1 style="text-align: center;">INPUT ITEM FORM</h1>
+            <hr>
+            <div class="row">
+                <div class="column" style="border-right: 2px solid black;">
+                    <center>
+                        <div class="preview"></div>
+                        <input type="file" name="file" id="file" accept="image/*" style="display: none;" required>
+                        <label for="file" class="selImage">Select Image</label>
+                    </center>
+                </div>
+                <div class="column">
+                    <form action="">
+                    <div class="row">
+                        <div class="col-25">
+                        <label for="name">Name</label>
+                        </div>
+                        <div class="col-75">
+                        <input type="text" id="name" name="name" placeholder="Item Name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="merk">Merk</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="merk" name="merk">
+                            <option value="Nike">Nike</option>
+                            <option value="Adidas">Adidas</option>
+                            <option value="Vans">Vans</option>
+                            <option value="New Balance">New Balance</option>
+                            <option value="Puma">Puma</option>
+                            <option value="Reebok">Reebok</option>
+                            <option value="Converse">Converse</option>
+                            <option value="DC Shoes">DC Shoes</option>
+                            <option value="Fila">Fila</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="model">Model</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="model" name="model">
+                            <option value="Sneakers">Sneakers</option>
+                            <option value="Wedges">Wedges</option>
+                            <option value="Peep Toe Heels">Peep Toe Heels</option>
+                            <option value="Flat Shoes">Flat Shoes</option>
+                            <option value="Loafers">Loafers</option>
+                            <option value="Boots">Boots</option>
+                            <option value="Stiletto">Stiletto</option>
+                            <option value="Slip On">Slip On</option>
+                            <option value="Boat Shoes">Boat Shoes</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                        <label for="price">Price</label>
+                        </div>
+                        <div class="col-75">
+                        <input type="text" id="price" name="price" placeholder="Price" onkeypress="return onlyNumberKey(event)" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                        <label for="">For</label>
+                        </div>
+                        <div class="col-75">
+                        <input type="radio" name="for" id="male" value="Male" checked>
+                        <label for="male">Male</label>
+                        <input type="radio" name="for" id="female" value="Female">
+                        <label for="female">Female</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="color">Color</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="checkbox" name="color" id="Red" value="Red" checked>
+                            <label for="Red">Red</label>
+                            <input type="checkbox" name="color" id="Green" value="Green">
+                            <label for="Green">Green</label>
+                            <input type="checkbox" name="color" id="Blue" value="Blue">
+                            <label for="Blue">Blue</label>
+                            <input type="checkbox" name="color" id="White" value="White">
+                            <label for="White">White</label>
+                            <input type="checkbox" name="color" id="Black" value="Black">
+                            <label for="Black">Black</label>
+                        </div>
+                        </div>
+                    <div class="row">
+                        <div class="col-25">
+                        <label for="description">Description</label>
+                        </div>
+                        <div class="col-75">
+                        <textarea id="description" name="description" placeholder="Description" style="height:100px" required></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <!-- <input type="submit" value="Submit"> -->
+                    </div>
+                </form>
+                <button class="submit" onclick="myForm()">Submit</button>
+                </div>
+            </div>
+        </section>
+        <section class="display" id="display">
+            <h1 style="text-align: center;">Display Item</h1>
+            <hr>
+            <div class="display-items" id="item-list">
+                <div class="card">
+                    <img src="./items/air-force.webp" alt="" style="width: 100%;">
+                    <h1>Nike Air Force</h1>
+                    <p class="price">Rp 1.899.000</p>
+                    <p>Lorem ipsum dolore</p>
+                    <p><button>Add to Cart</button></p>
+                  </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
