@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+        body {
+            background-color: #00A8B2;
+            margin: 0;
+        }
+        .container {
+            margin: 4rem auto;
+            width: 90%;
+        }
+        .row {
+            display: flex;
+            margin-top: 2rem;
+        }
+        .col {
+            margin: auto;
+            background-color: aquamarine;
+            padding: 2rem;
+            border-radius: 12px;
+            width: 100%;
+        }
+        .col-4 {
+            width: 650px !important;
+        }
+        .col-8 {
+            width: 950px !important;
+        }
+        .table1,
+        .table2,
+        .table3 {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .table1 td,
+        .table2 td,
+        .table1 th, 
+        .table2 th,
+        .table3 td,
+        .table3 th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .table1 tr,
+        .table2 tr,
+        .table3 tr {
+            background-color: white;
+            text-align: center;
+        }
+        .table1 tr:nth-child(2){
+            background-color: green;
+        }
+        .table2 tr:nth-child(3){
+            background-color: red;
+            color: #ddd;
+        }
+        .table3 tr:nth-child(4){
+            background-color: blue;
+            color: #ddd;
+        }
+        .table1 tr:hover, 
+        .table2 tr:hover, 
+        .table3 tr:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+        .table1 th, 
+        .table2 th, 
+        .table3 th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #04aa6d;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #000;
+            overflow: hidden;
+        }
+          
+        .navbar a {
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+          
+        .navbar a:hover,
+        .navbar a.active {
+            background-color: #04aa6d;
+        }
+          
+        .sticky-top {
+          position: sticky;
+          top: 0;
+          z-index: 1020;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar sticky-top">
+        <a href="../project1/profile.html">Profile</a>
+        <a href="../project2/tables.html" class="active">Tables</a>
+        <a href="../project3/biograph.html">Biography</a>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col col-4">
+                <h1><center>Hobby</center></h1>
+                <hr>
+                <table class="table1">
+                    <tr>
+                        <th>Name</th>
+                    </tr>
+                    <tr>
+                        <td>Badminton</td>
+                    </tr>
+                    <tr>
+                        <td>Swimming</td>
+                    </tr>
+                    <tr>
+                        <td>Gaming</td>
+                    </tr>
+                    <tr>
+                        <td>Reading</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col col-8">
+                <h1><center>Favorite Movies</center></h1>
+                <hr>
+                <table class="table2">
+                    <tr>
+                        <th width="30%">Cover</th>
+                        <th width="40%">Name</th>
+                        <th width="20%">Studio</th>
+                        <th width="10%">Year</th>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/violet1.jpg" alt="" height="200"></td>
+                        <td>Violet Evergarden Eternity & Auto Memory Doll</td>
+                        <td>Kyoto Animation</td>
+                        <td>2019</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/violet2.jpg" alt="" height="200"></td>
+                        <td>Violet Evergarden The Movie</td>
+                        <td>Kyoto Animation</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/totoro.jpg" alt="" height="200"></td>
+                        <td>My Neighbor Totoro</td>
+                        <td>Studio Ghibli</td>
+                        <td>1988</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1><center>Favorite Songs</center></h1>
+                <hr>
+                <table class="table3">
+                    <tr>
+                        <th width="20%">Cover</th>
+                        <th width="15%">Title</th>
+                        <th width="15%">Album</th>
+                        <th width="10%">Artist/Band</th>
+                        <th width="10%">Duration</th>
+                        <th width="30%">Youtube</th>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/muse.jpg" alt="" height="200"></td>
+                        <td>Absolution</td>
+                        <td>Stockholm Syndrome</td>
+                        <td>Muse</td>
+                        <td>08:07</td>
+                        <td>
+                            <iframe width="350" height="200" src="https://www.youtube.com/embed/9wV9_je85DE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/wagakki.jpg" alt="" height="200"></td>
+                        <td>Phony</td>
+                        <td>Vocalo Zanmai 2</td>
+                        <td>Wagakki Band</td>
+                        <td>03:11</td>
+                        <td>
+                            <iframe width="350" height="200" src="https://www.youtube.com/embed/UKvM6ip--Xw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/aimer.jpg" alt="" height="200"></td>
+                        <td>Kimi wo Matsu</td>
+                        <td>Dawn</td>
+                        <td>Aimer</td>
+                        <td>04:27</td>
+                        <td>
+                            <iframe width="350" height="200" src="https://www.youtube.com/embed/w6hFEFzemKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
