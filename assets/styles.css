@@ -14,6 +14,9 @@ body {
 }
 header {
     display: block;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 nav {
     background-color: var(--bc-nav);
@@ -89,6 +92,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
     margin: 0 4rem;
 }
@@ -108,4 +112,30 @@ main {
 .image img {
     width: 100%;
     max-width: 200px;
+}
+.more a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #10b981;
+}
+.more a:hover {
+    color: var(--bc-text);
+}
+footer {
+    background-color: var(--bc-nav);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px;
+}
+footer a {
+    text-decoration: none;
+    color: #ddd;
+    margin-right: 1vw;
+    font-weight: 500;
+}
+footer a:hover {
+    color: white;
 }
