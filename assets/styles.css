@@ -109,3 +109,21 @@ main {
     width: 100%;
     max-width: 200px;
 }
+footer {
+    background-color: var(--bc-nav);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px;
+}
+footer a {
+    text-decoration: none;
+    color: #ddd;
+    margin-right: 1vw;
+    font-weight: 500;
+}
+footer a:hover {
+    color: white;
+}
