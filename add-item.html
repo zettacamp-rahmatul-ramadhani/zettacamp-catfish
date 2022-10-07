@@ -4,29 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Add Items</title>
     <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="./index.html" class="brand">Brand Name</a></li>
-                <li><a href="./shopping-list.html" class="menu">Shopping List</a></li>
+                <li><a href="./shopping-list.html" class="menu active">Shopping List</a></li>
               </ul>
         </nav>
     </header>
     <main>
-        <section id="jumbotron">
-            <iframe class="video" src="https://www.youtube.com/embed/GsxyXY4tuU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="desc">
-                <h1>Brand Name</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ipsa, quia saepe deserunt sint sapiente numquam recusandae, veritatis, incidunt eligendi perferendis voluptatibus? Ab at qui quod nostrum eos sit aliquid.</p>
-            </div>
+        <header>
+            <a href="./shopping-list.html" style="text-decoration: none; color: rgba(0, 0, 0, 0.6)"><i class="fa-solid fa-arrow-left" style="margin-right: 10px;"></i>Shopping List</a>
+        </header>
+        <section>
+            <header>
+                <h1>Add Item</h1>
+                <a href="#!"><i class="fa-solid fa-plus" style="margin-right: 5px;"></i>Submit</a>
+            </header>
         </section>
-
         <section id="content">
-            <h2>Our Most Popular Product</h2>
+            <div class="form">
+                <form action="" class="input">
+                    <label for="name">Product Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter the product name...">
+                    <label for="price">Price</label>
+                    <input type="text" name="price" id="price" placeholder="Enter the product price...">
+                </form>
+                <div class="upload">
+                    <a href="#!" class="btn"><i class="fa-solid fa-plus" style="margin-right: 5px;"></i>Upload Product Image</a>
+                </div>
+            </div>
+            <h2>Card Preview</h2>
             <div class="card">
                 <div class="card-items">
                     <div class="image">
@@ -48,9 +61,6 @@
                     </div>
                     <p class="item-title">Product Name</p>
                     <p class="item-price">RP 1.000.000</p>
-                </div>
-                <div class="more">
-                    <a href="./shopping-list.html">View More &rarr;</a>
                 </div>
             </div>
         </section>
