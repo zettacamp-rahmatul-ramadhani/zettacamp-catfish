@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+:root {
+    --bc-text: #6ee7b7;
+    --bc-nav: #1e293b;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f5f9;
+}
+header {
+    display: block;
+}
+nav {
+    background-color: var(--bc-nav);
+    display: block;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li a {
+    display: block;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+.brand {
+    float: left;
+    color: var(--bc-text) !important;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 1rem;
+}
+.menu {
+    float: right;
+    margin: 6px;
+    font-size: 18px;
+}
+.menu:hover {
+    color: var(--bc-text);
+}
+main {
+    margin: 1vw auto;
+    width: 80%;
+}
+#jumbotron {
+    padding: 0.5vw 1vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.video {
+    width: 55vh;
+    height: 30vh;
+    float: left;
+    background-color: #cdcfd1;
+    margin: 8px;
+    border-radius: 12px;
+}
+.desc {
+    float: right;
+    width: 85vh;
+    top: 50%;
+    margin-left: 2rem;
+}
+.desc h1 {
+    color: #10b981;
+    font-weight: bolder;
+    font-size: 50px;
+    margin: 0;
+}
+.desc p {
+    font-size: 18px;
+}
+#content {
+    position: relative;
+}
+#content > h2 {
+    text-align: center;
+}
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 4rem;
+}
+.card-items {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    width: 400px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+.card-items .image {
+    background-color: #f1f5f9;
+    width: 100%;
+    height: 300px;
+}
+.image img {
+    width: 100%;
+    max-width: 200px;
+}
