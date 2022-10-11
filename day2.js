@@ -1,11 +1,3 @@
-const purcasing2 = (element, buy) => {
-    const priceAfterDiscount = element.price - (element.price * (element.discount/100))
-    const priceAfterTax = priceAfterDiscount + (priceAfterDiscount * (element.tax/100))
-    const total = priceAfterTax * buy
-    console.log('price of item is : %f added to total', total);
-    return total
-}
-
 const detail = [
     {
         name: "book 1",
@@ -33,6 +25,14 @@ const detail = [
         stock: 1
     }
 ]
+
+const purcasing2 = (element, buy) => {
+    const priceAfterDiscount = element.price - (element.price * (element.discount/100))
+    const priceAfterTax = priceAfterDiscount + (priceAfterDiscount * (element.tax/100))
+    const total = priceAfterTax * buy
+    console.log('price of item is : %f added to total', total);
+    return total
+}
 
 let total = 0
 const buy = 2
