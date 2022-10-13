@@ -24,6 +24,31 @@ const song = [
         duration: 240,
         artist: "b",
         genre: "rock"
+    },{
+        name: "Song 6",
+        duration: 270,
+        artist: "a",
+        genre: "pop"
+    },{
+        name: "Song 7",
+        duration: 5400,
+        artist: "c",
+        genre: "pop"
+    },{
+        name: "Song 8",
+        duration: 8400,
+        artist: "z",
+        genre: "rock"
+    },{
+        name: "Song 9",
+        duration: 1200,
+        artist: "b",
+        genre: "jazz"
+    },{
+        name: "Song 10",
+        duration: 240,
+        artist: "b",
+        genre: "rock"
     }
 ]
 
