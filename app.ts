@@ -1,6 +1,6 @@
 type argument = number | string
 
-function union(args: argument[]): string{
+const union = (args: argument[]): string => {
     let result: string = args.join(" ")
     return result
 }
