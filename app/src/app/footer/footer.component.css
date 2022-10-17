@@ -1,0 +1,14 @@
+footer {
+  background-color: cornflowerblue;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+footer > p {
+  width: fit-content;
+  margin: 0 auto;
+  color: white;
+  font-weight: bold;
+}
