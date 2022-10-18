@@ -1,1 +1,8 @@
-<article>Article</article>
+<article>
+  <div class="card" *ngFor="let item of cardItems">
+    <div class="img">Image</div>
+    <h2>{{ item.title }}</h2>
+    <p>{{ item.desc }}</p>
+    <button [textContent]="text" (click)="change()" [style]="style"></button>
+  </div>
+</article>

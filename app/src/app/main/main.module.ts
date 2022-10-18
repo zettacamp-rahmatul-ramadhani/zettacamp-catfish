@@ -4,6 +4,7 @@ import { MainComponent } from './main.component';
 import { ArticleComponent } from './article/article.component';
 import { AsideComponent } from './aside/aside.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
+import { CardComponent } from './card/card.component';
 
 
 
@@ -12,7 +13,8 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
     MainComponent,
     ArticleComponent,
     AsideComponent,
-    JumbotronComponent
+    JumbotronComponent,
+    CardComponent
   ],
   imports: [
     CommonModule

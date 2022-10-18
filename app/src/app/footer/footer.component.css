@@ -1,10 +1,9 @@
 footer {
   background-color: cornflowerblue;
   padding: 15px;
-  position: fixed;
+  position: relative;
+  margin-top: 2rem;
   bottom: 0;
-  left: 0;
-  right: 0;
 }
 footer > p {
   width: fit-content;

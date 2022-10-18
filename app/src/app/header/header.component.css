@@ -1,6 +1,8 @@
 header {
   background-color: cornflowerblue;
   padding: 12px;
+  position: sticky;
+  top: 0;
 }
 header > h2 {
   width: fit-content;
