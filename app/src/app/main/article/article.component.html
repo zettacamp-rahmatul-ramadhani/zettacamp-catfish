@@ -3,6 +3,6 @@
     <div class="img">Image</div>
     <h2>{{ item.title }}</h2>
     <p>{{ item.desc }}</p>
-    <button [textContent]="text" (click)="change()" [style]="style"></button>
+    <button [textContent]="item.status" (click)="change(item)" [style.backgroundColor]="item.status == 'Active' ? 'green' : 'red'"></button>
   </div>
 </article>
