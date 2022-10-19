@@ -20,17 +20,8 @@ export class ArticleComponent implements OnInit{
     desc: "Desc 3",
     status: "Danger"
   }]
-
-  style = "background-color: rgba(0, 255, 0, 1)"
   constructor() { }
 
   ngOnInit(): void {
-  }
-  change(item: any) {
-    if (item.status === "Active") {
-      item.status = "Danger"
-    } else {
-      item.status = "Active"
-    }
   }
 }

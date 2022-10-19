@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -6,10 +6,18 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  isDisabled: boolean = false
+  @Input() data: any
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  change(item: any) {
+    if (item.status === "Active") {
+      item.status = "Danger"
+    } else {
+      item.status = "Active"
+    }
+  }
 }

@@ -1,6 +1,6 @@
 <div class="card">
   <div class="img">Image</div>
-  <h2>Title</h2>
-  <p>Desc</p>
-  <button [disabled]="isDisabled">Active</button>
+  <h2>{{ data.title }}</h2>
+  <p>{{ data.desc }}</p>
+  <button [textContent]="data.status" [style.backgroundColor]="data.status == 'Active' ? 'green' : 'red'" (click)="change(data)"></button>
 </div>
