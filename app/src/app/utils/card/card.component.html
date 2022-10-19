@@ -1,0 +1,7 @@
+<div class="card">
+  <div class="img">Image</div>
+  <h2 [textContent]="data.title">Card Title</h2>
+  <p [textContent]="data.desc">Card Description</p>
+  <button [textContent]="data.status" [ngStyle]="{'background-color': data.status == 'active' ? 'green' : 'red'}" (click)="status(data)">Button</button>
+  <button (click)="addDatas(data)">Add Data</button>
+</div>

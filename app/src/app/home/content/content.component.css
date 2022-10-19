@@ -1,0 +1,12 @@
+.content {
+  display: flex;
+  gap: 1rem;
+}
+app-article {
+  width: 75%;
+  float: left;
+}
+app-aside {
+  width: 25%;
+  float: right;
+}
